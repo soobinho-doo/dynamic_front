@@ -4,8 +4,14 @@ import '../styles/header.css'
 const Header = () => {
     return (
         <header>
-            <Link to={'/'}>메인 페이지</Link>
-            <Link to={'/test'}>테스트 페이지</Link>
+            <ul>
+                <li>
+                    <Link to={'/'}>메인 페이지</Link>
+                </li>
+                <li>
+                    <Link to={'/test'}>테스트 페이지</Link>
+                </li>
+            </ul>
         </header>
     );
 }
