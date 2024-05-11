@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css'
+import '../src/styles/common.css'
 import RouterComponent from './RouterComponent'
 
 function App() {

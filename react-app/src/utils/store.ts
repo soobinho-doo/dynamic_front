@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit"
-import authReducer from "../reducer/authReducer"
+import isLoggedIn from "../reducer/isLoggedIn"
 
 const store = configureStore({
   reducer: {
-    authRedux:authReducer,
+    isLoggedIn : isLoggedIn,
   },
 })
 
-export type RootState = ReturnType<typeof store.getState>
-export type AppDispatch = typeof store.dispatch
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
+
+export default store;
